@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Comprehensive Registration Form</h1>
+    <fieldset>
+    <form action="">
+        <label for="name">FullName <input type="text" name="name"  place holder="Eg:Roopa Pattipati" value="name-value"></label><br><br>
+        <label for="email">Email<input type="email" name="email" value="email-value" placeholder="Eg:roopapattipati@gmail.com" required></label><br><br>
+        <label for="password">Password<input type="password" name="password" value="password-value" maxlength="20"></label><br><br>
+        <label for="confirm-password" required>Confirm Password<input type="password" name="confirm-password" pattern="[a-zA-Z0-9]{8-20}" required></label><br><br>
+        <label for="date">Date of Birth <input type="date" max="2006-07-27"></label><br><br>
+        <label for="gender">
+            Select your Gender
+            <select name="gender" id="gender">
+                <option value="" >choose your Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </label><br><br>
+        <label for="radio">Martial status: 
+            <input type="radio" name="status" value="single">Single
+            <input type="radio" name="status" value="married">Married
+            <input type="radio" name="status" value="divorced">Divorced
+        </label><br><br>
+        <label for="hobbies">Your Hobbies
+            <input type="checkbox" name="hobbies" value="Drawing">Drawing
+            <input type="checkbox" name="hobbies" value="Swimming">Swimming
+            <input type="checkbox" name="hobbies" value="Cricket">Cricket
+            <input type="checkbox" name="hobbies" value="Watching Movies">Watching Movies
+        </label><br><br>
+        <label for="file">Upload profile photo <input type="file" accept="image/png,image/jpg"></label><br><br>
+        <label for="button"><input type="submit"></label>
+    </form>
+</fieldset>
+</body>
+</html>

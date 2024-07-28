@@ -12,7 +12,8 @@
             <label for="name"><b>Name:</b> <input type="text" placeholder="Eg:-Roopa Pattipati" ></label><br><br>
             <label for="email"><b>Email:</b> <input type="email" name="email" id="email" value="roopapattipati@gmail.com" required></label><br><br>
             <label for="comments"><u><strong>Comments</strong></u> <textarea name="comments" id="comments" placeholder="Enter your feedback here" rows="4" cols="15"></textarea></label><br><br>
-            <label for="rate"><i><b>Rate your Experience</b></i> <input id="rate" type="range" min="0" max="10"></label><br><br>
+            <label for="rate"><i><b>Rate your Experience</b></i> <input id="rate" type="range" min="0" max="10" value="5" oninput="ratingValue.value = rating.value"></label>
+            <output id="ratingValue">5</output><br><br> 
             <label for="feedback type"><em><b>Select your feedback option </b></em><br>
                 <input type="radio" name="feedback type" value="compliment" checked>Compliment <br>
                 <input type="radio" name="feedback type" value="complaint">Complaint <br>
@@ -21,6 +22,10 @@
             <label for="feedback"> <input type="checkbox" name="feedback" value="feedback" required><strong>Agree terms and conditions of <a href="#">feedback policy</a></strong></label><br><br>
             <label for="submit"><input type="submit"></label>
         </form>
+
+        <h2 id="feedback-policy">Feedback Policy</h2>
+        <p>Our feedback policy ensures that all comments are reviewed and addressed promptly.
+           We value your input and strive to improve our services based on your suggestions.</p>
     </fieldset>
 </body>
 </html>
